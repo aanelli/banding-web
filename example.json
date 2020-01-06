@@ -1,0 +1,39 @@
+{
+  "deployments": [
+    {
+      "name": "bosh",
+      "environments" : [
+        {
+          "name": "snw-dev",
+          "releases": [
+            {
+              "name": "bosh",
+              "version": "270.9",
+              "age": 0
+            },
+            {
+              "name": "uaa",
+              "version": "72.0.0",
+              "age": 0
+            }
+          ]
+        },
+        {
+          "name": "snw-prod",
+          "releases": [
+            {
+              "name": "bosh",
+              "version": "270.2",
+              "age": 1
+           },
+            {
+              "name": "uaa",
+              "version": "72.0.0",
+              "age": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

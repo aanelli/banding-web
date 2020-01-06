@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="row">
+  <div>Deployment</div>
+  <div>Release</div>
+  <div>Dev</div>
+  <div>Non-Prod</div>
+  <div>Prod</div>
+</div>
+<div class="row">
+  <div class="deployment">CLOWN FLOUNDRY</div>
+  <div class="jobs">
+    <div>idk some job</div>
+    <div>bosh</div>
+    <div>thing with long name</div>
+  </div>
+  <div class="versions">
+    <div>1.2.3</div>
+    <div>alpha.2.3.b.c</div>
+    <div>0?</div>
+  </div>
+  <div class="versions">
+    <div>{{Release1.version}}</div>
+    <div>{{Release2.version}}</div>
+    <div>{{Release3.version}}</div>
+  </div>
+  <div class="versions">
+    <div>{{Release1.version}}</div>
+    <div>{{Release2.version}}</div>
+    <div>{{Release3.version}}</div>
+  </div>
+</div>
+
+<!--below from https://codepen.io/rachelandrew/pen/NqQPBR for testing-->
+<!--<div class="wrapper">-->
+  <!--<div class="box a">A</div>-->
+  <!--<div class="box b">B</div>-->
+  <!--<div class="box c">C</div>-->
+  <!--<div class="box d">-->
+    <!--<div class="box e">E</div>-->
+    <!--<div class="box f">F</div>-->
+    <!--<div class="box g">G</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<!-- Include Handlebars from a CDN for now? i guess? -->
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+<script id="data-row-template" type="text/x-handlebars-template">
+{{#each deployments}}
+      <table border=5 bordercolor=green>
+            {{Release1}}
+            {{Release2}}
+            {{Release3}}
+      </table>
+      <table border=5 bordercolor=blue>
+            {{Release1.version}}
+            {{Release2.version}}
+            {{Release3.version}}
+      </table>
+      <table border=5 bordercolor=blue>
+            {{Release1.version}}
+            {{Release2.version}}
+            {{Release3.version}}
+      </table>
+      <table border=5 bordercolor=blue>
+            {{Release1.version}}
+            {{Release2.version}}
+            {{Release3.version}}
+      </table>
+</script>
+</body>
+
+</html>

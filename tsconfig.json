@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": true,
+        "outFile": "./build.js",
+        "removeComments": true
+    },
+    "include": [
+        "*.ts"
+    ]
+}
